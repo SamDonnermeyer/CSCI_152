@@ -28,6 +28,10 @@ public class Main {
 
         // Print Report
         System.out.println(employeeName + "'s Payroll information:");
+        System.out.println("Hours Worked: " + hoursWorked);
+        System.out.println("Hourly Wage: " + hourlyPay);
+        System.out.println("Tax Rate: " + taxRate);
+        System.out.println("-----------");
         System.out.println("Gross Pay: $" + gross_pay);
         System.out.println("Total Taxes: $" + total_taxes);
         System.out.println("Net Pay: $" + net_pay);
@@ -128,7 +132,7 @@ public class Main {
 
         // Method Call
         float gross_pay = grossPay(25.0f, 12.5f);
-        System.out.println("$" + gross_pay);
+        System.out.println("Gross Pay: $" + gross_pay);
         System.out.println();
 
         /////////////////////////////////////////////////////////////////////////
@@ -137,7 +141,7 @@ public class Main {
 
         // Method Call
         float net_pay = netPay(grossPay(25.0f, 12.5f), .04f);
-        System.out.println("$" + net_pay);
+        System.out.println("Net Pay: $" + net_pay);
         System.out.println();
 
         /////////////////////////////////////////////////////////////////////////
@@ -169,7 +173,7 @@ public class Main {
         even_odd_listing(selection);
 
         // Read user's response
-        selection = scan_obj_1.nextInt();
+        selection += scan_obj_1.nextInt();
 
         // Get Third Selection //
         even_odd_listing(selection);
